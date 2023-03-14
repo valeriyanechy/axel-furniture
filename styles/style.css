@@ -75,6 +75,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 .header__nav-list {
   display: flex;
@@ -132,7 +136,7 @@ a {
   font-size: 69px;
   font-weight: 500;
   overflow: hidden;
-  top: 20%;
+  top: 33%;
   left: 36%;
 }
 .header__descr {
@@ -142,13 +146,13 @@ a {
   font-size: 18px;
   font-weight: 400;
   text-align: end;
-  top: 25%;
+  top: 35%;
   left: 10%;
 }
 .header__button {
   margin: 25px 0;
   position: relative;
-  top: 25%;
+  top: 35%;
   left: 83%;
 }
 .header__columns {
@@ -166,6 +170,8 @@ a {
 .header__image {
   position: absolute;
   top: 12%;
+  animation-name: bluechair;
+  animation-duration: 3s;
 }
 .header__image img {
   position: relative;
@@ -176,9 +182,11 @@ a {
 .orangechair {
   position: relative;
   width: 320px;
-  top: 17%;
+  top: 26%;
   left: 35%;
-  rotate: 20grad;
+  rotate: 18grad;
+  animation-duration: 3s;
+  animation-name: orangechair;
 }
 
 .burger {
@@ -212,6 +220,22 @@ a {
   transform: translateX(0%);
 }
 
+@keyframes orangechair {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 35%;
+  }
+}
+@keyframes bluechair {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 12%;
+  }
+}
 @media screen and (max-width: 800px) {
   .header__nav-list {
     width: 60%;

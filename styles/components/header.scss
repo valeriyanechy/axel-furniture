@@ -13,6 +13,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
 
         &-list {
             display: flex;
@@ -89,7 +93,7 @@
         font-size: 69px;
         font-weight: 500;
         overflow: hidden;
-        top: 20%;
+        top: 33%;
         left: 36%;
         // border-right: 3px solid;
     }
@@ -101,14 +105,14 @@
         font-size: 18px;
         font-weight: 400;
         text-align: end;
-        top: 25%;
+        top: 35%;
         left: 10%;
     }
 
     &__button {
         margin: 25px 0;
         position: relative;
-        top: 25%;
+        top: 35%;
         left: 83%;
     }
 
@@ -129,6 +133,8 @@
     &__image {
         position: absolute;
         top: 12%;
+        animation-name: bluechair;
+        animation-duration: 3s;
 
         img {
             position: relative;
@@ -141,9 +147,11 @@
 .orangechair {
     position: relative;
     width: 320px;
-    top: 17%;
+    top: 26%;
     left: 35%;
-    rotate: 20grad;
+    rotate: 18grad;
+    animation-duration: 3s;
+    animation-name: orangechair;
 }
 
 .burger {
@@ -175,6 +183,26 @@
 
 .header__nav.show .header__nav-list {
     transform: translateX(0%);
+}
+
+@keyframes orangechair {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 35%;
+    }
+}
+
+@keyframes bluechair {
+    from {
+        top: 100%
+    }
+
+    to {
+        top: 12%
+    }
 }
 
 @media screen and (max-width: 800px) {
