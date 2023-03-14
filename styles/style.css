@@ -64,6 +64,7 @@ a {
 .header {
   padding-bottom: 30px;
   background-color: #F1F1F1;
+  background-image: url(/images/background.png);
 }
 .header__wrap {
   min-height: 100vh;
@@ -126,35 +127,58 @@ a {
   position: relative;
   overflow: hidden;
 }
-.header__info {
-  position: relative;
-  display: block;
-  left: -25%;
-  top: 190px;
-  color: rgba(0, 0, 0, 0.8);
-}
 .header__title {
-  position: absolute;
-  left: 40%;
-  font-size: 65px;
+  position: relative;
+  font-size: 69px;
   font-weight: 500;
   overflow: hidden;
+  top: 20%;
+  left: 36%;
 }
 .header__descr {
-  position: absolute;
+  position: relative;
   max-width: 630px;
   margin: 10px;
   font-size: 18px;
   font-weight: 400;
-  left: 26%;
-  top: 100px;
   text-align: end;
+  top: 25%;
+  left: 10%;
 }
 .header__button {
   margin: 25px 0;
+  position: relative;
+  top: 25%;
+  left: 83%;
+}
+.header__columns {
+  letter-spacing: -0.36em;
+  display: flex;
+  justify-content: center;
+}
+.header__col {
+  width: 50%;
+  padding: 0 30px 0;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+.header__image {
   position: absolute;
-  left: 60%;
-  top: 209px;
+  top: 12%;
+}
+.header__image img {
+  position: relative;
+  width: 790px;
+  rotate: -20grad;
+}
+
+.orangechair {
+  position: relative;
+  width: 320px;
+  top: 17%;
+  left: 35%;
+  rotate: 20grad;
 }
 
 .burger {
