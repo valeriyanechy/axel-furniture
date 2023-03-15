@@ -9,8 +9,10 @@
     }
 
     &__nav {
+        background-color: $bg;
+        z-index: 999;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         position: fixed;
         left: 0;
@@ -131,14 +133,13 @@
 
     &__image {
         position: absolute;
-        top: 12%;
+        top: 25%;
         animation-name: bluechair;
         animation-duration: 3s;
 
         img {
             position: relative;
-            width: 790px;
-            rotate: -20grad;
+            width: 670px;
         }
     }
 }
