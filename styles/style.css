@@ -14,7 +14,6 @@ body {
   margin: 0;
   font: 400 18px/1.6 "Prompt", Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.9);
-  background-color: #fff;
 }
 
 ul, ol, li {
@@ -63,8 +62,7 @@ a {
 
 .header {
   padding-bottom: 30px;
-  background-color: #F1F1F1;
-  background-image: url(/images/background.png);
+  background-image: url(../images/background.png);
 }
 .header__wrap {
   min-height: 100vh;
