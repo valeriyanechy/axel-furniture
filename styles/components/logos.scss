@@ -1,0 +1,32 @@
+.logos {
+    padding: 30px 0;
+    background: $beige;
+
+    &__wrap {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__media {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .logos__media img {
+        &:nth-child(1) {
+            width: 100px;
+        }
+
+        &:nth-child(3) {
+            width: 95px;
+        }
+
+        &:nth-child(4) {
+            width: 90px;
+        }
+    }
+}

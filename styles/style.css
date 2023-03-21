@@ -529,5 +529,122 @@ a {
     padding: 0 25px;
   }
 }
+.blog {
+  padding: 10px 0 30px;
+  background-color: #F1F1F1;
+}
+.blog__wrap {
+  position: relative;
+}
+.blog__title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  padding: 0 0 30px;
+}
+.blog__column {
+  letter-spacing: -0.36em;
+  max-height: 272px;
+  display: block;
+  column-count: 2;
+  column-gap: 0;
+  column-width: 500px;
+  border: 1px solid;
+  margin: 20px 0;
+}
+.blog__col {
+  letter-spacing: normal;
+  vertical-align: middle;
+  max-height: 270px !important;
+  background-color: #d4a1a7;
+}
+.blog__col img {
+  position: relative;
+  width: 100%;
+}
+.blog__col-title {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  padding: 5px 30px 0;
+}
+.blog__col-subtitle {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: end;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.blog__col-descr {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 20px 23px;
+  text-align: left;
+}
+.blog__column2 {
+  letter-spacing: -0.36em;
+  max-height: 300px;
+  display: block;
+  column-count: 3;
+  column-gap: 0;
+  column-rule: solid 1px;
+  border: 1px solid;
+}
+.blog__col2 {
+  letter-spacing: normal;
+  vertical-align: middle;
+  max-height: 298px !important;
+  background-color: #eb8a3f;
+}
+.blog__col2 img {
+  position: relative;
+  width: 100%;
+}
+.blog__col2-title {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  padding: 5px 30px 0;
+}
+.blog__col2-subtitle {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: end;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.blog__col2-descr {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 20px 27px;
+  text-align: left;
+}
+
+.logos {
+  padding: 30px 0;
+  background: #d3d3d3;
+}
+.logos__wrap {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.logos__media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .logos__media img:nth-child(1) {
+    width: 100px;
+  }
+  .logos__media img:nth-child(3) {
+    width: 95px;
+  }
+  .logos__media img:nth-child(4) {
+    width: 90px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
